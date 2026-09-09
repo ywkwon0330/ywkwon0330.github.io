@@ -1,7 +1,59 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="서울대학교 첨단융합학부 권용우의 개인 홈페이지">
+  <title>권용우 | Personal Homepage</title>
+  <style>
+    :root { --ink: #182230; --muted: #627083; --navy: #123a63; --blue: #e8f2fc; --line: #dce5ef; --paper: #fff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; color: var(--ink); background: #f4f7fb; font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; line-height: 1.7; }
+    main { width: min(100% - 40px, 760px); margin: 0 auto; padding: 64px 0; }
+    .hero { padding: 52px 48px; color: #fff; background: linear-gradient(135deg, #123a63, #24669a); border-radius: 22px 22px 0 0; }
+    .eyebrow { margin: 0 0 10px; color: #cfe8ff; font-size: .9rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 10px; font-size: clamp(2.25rem, 7vw, 4rem); line-height: 1.15; letter-spacing: -.045em; }
+    .role { margin: 0; font-size: 1.1rem; color: #eef7ff; }
+    .content { padding: 44px 48px 48px; background: var(--paper); border-radius: 0 0 22px 22px; box-shadow: 0 16px 45px rgba(19, 58, 99, .10); }
+    section + section { margin-top: 42px; }
+    h2 { margin-bottom: 14px; font-size: 1.25rem; letter-spacing: -.025em; }
+    .intro { margin-bottom: 0; color: var(--muted); font-size: 1.05rem; word-break: keep-all; }
+    .interests { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+    .interests li { padding: 9px 15px; color: var(--navy); background: var(--blue); border-radius: 999px; font-weight: 700; }
+    .contact-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .contact-link { display: block; padding: 18px; color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 12px; transition: border-color .2s, box-shadow .2s, transform .2s; }
+    .contact-link:hover, .contact-link:focus-visible { border-color: #7baed8; box-shadow: 0 7px 18px rgba(18, 58, 99, .10); transform: translateY(-2px); }
+    .contact-label { display: block; margin-bottom: 4px; color: var(--muted); font-size: .84rem; font-weight: 700; }
+    footer { padding-top: 24px; color: var(--muted); font-size: .88rem; text-align: center; }
+    @media (max-width: 560px) { main { width: min(100% - 28px, 760px); padding: 28px 0; } .hero { padding: 38px 28px; } .content { padding: 32px 28px 36px; } .contact-list { grid-template-columns: 1fr; } }
+  </style>
+</head>
 <body>
-<h1>안녕하세요, 제 홈페이지입니다</h1>
-<p>GitHub Pages로 만들었습니다!</p>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Personal Homepage</p>
+      <h1>권용우</h1>
+      <p class="role">서울대학교 첨단융합학부 I반 · 2026학번</p>
+    </header>
+    <div class="content">
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">안녕하세요</h2>
+        <p class="intro">안녕하세요 저는 서울대학교 첨단융합학부 I반 26학번 권용우라고 합니다.</p>
+      </section>
+      <section aria-labelledby="interest-title">
+        <h2 id="interest-title">좋아하는 것</h2>
+        <ul class="interests"><li>🎮 게임</li><li>⚽ 축구</li></ul>
+      </section>
+      <section aria-labelledby="contact-title">
+        <h2 id="contact-title">연락하기</h2>
+        <div class="contact-list">
+          <a class="contact-link" href="tel:01059662097"><span class="contact-label">전화</span>010-5966-2097</a>
+          <a class="contact-link" href="mailto:ywkwon0330@snu.ac.kr"><span class="contact-label">이메일</span>ywkwon0330@snu.ac.kr</a>
+        </div>
+      </section>
+    </div>
+    <footer>© 2026 권용우. All rights reserved.</footer>
+  </main>
 </body>
 </html>
